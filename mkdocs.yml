@@ -5,6 +5,8 @@ site_url: https://dorito.netlify.app/
 theme:
     name: 'material'
     logo: assets/meta/LOGO_DORITO.png
+    extra:
+      homepage: https://dorito.netlify.app/
     favicon: assets/meta/favicons.png
     custom_dir: overrides
     font:
