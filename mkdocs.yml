@@ -4,8 +4,8 @@ site_url: https://dorito.netlify.app/
 
 theme:
     name: 'material'
-    logo: assets/meta/LOGO_DORITO.png
-    favicon: assets/meta/favicons.png
+    logo: 'assets/img/favicon.png'
+    favicon: assets/img/favicon.png
     custom_dir: overrides
     font:
         text: Ubuntu
