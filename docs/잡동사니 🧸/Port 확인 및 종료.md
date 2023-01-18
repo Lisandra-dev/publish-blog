@@ -1,5 +1,8 @@
 ---  
+category: 잡동사니 🧸  
 share: true  
+date created: Monday, January 16th 2023, 3:20:49 pm  
+date modified: Wednesday, January 18th 2023, 4:41:28 pm  
 ---  
 특정 포트를 찾아 포트를 닫고 싶으면 다음과 같이 쳐서 PID를 알아낸다.  
   
@@ -14,4 +17,4 @@ sudo lsof -i :3000
 ```shell  
 sudo kill -9 PID  
 ```  
-![Pasted image 20230118153011](../Attachments%20%F0%9F%94%97/Pasted%20image%2020230118153011.png)
+![[Pasted image 20230118153011.png]]

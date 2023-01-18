@@ -1,5 +1,8 @@
 ---  
+category: 잡동사니 🧸  
 share: true  
+date created: Tuesday, January 17th 2023, 11:47:50 am  
+date modified: Wednesday, January 18th 2023, 4:41:28 pm  
 ---  
 `What should I do for another vault`   
 1. modify requirements.txt:   
@@ -27,9 +30,9 @@ mkdocs-minify-plugin==0.6.2
   
 2. modify main.js  https://discord.com/channels/1012652786887954443/1012653060230754394/1064860285476798485   
        Just download the file and put in with remplacement in the plugin folder  
-![main.js](./main.js.md)  
+![[../assets/img/main.js|main.js]]  
 3. add file `tags`   
-![Pasted image 20230117211746.png](./Pasted%20image%2020230117211746.png)  
+![[../assets/img/Pasted image 20230117211746.png|Pasted image 20230117211746.png]]  
   
 4. edit header   
 You can change the header for each category (as far I know) but you can change the background by changing this line in the customization.css :  
