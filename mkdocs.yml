@@ -4,8 +4,8 @@ site_url: https://dorito.netlify.app/
 
 theme:
     name: 'material'
-    logo: assets/meta/SEO.png
-    favicon: assets/meta/SEO.png
+    logo: assets/SEO.png
+    favicon: assets/favicon.png
     custom_dir: overrides
     font:
         text: Ubuntu
@@ -134,7 +134,7 @@ extra_css:
     - assets/css/custom_attributes.css
     - assets/css/customization.css
 extra:
-  SEO: 'assets/meta/SEO.png'
+  SEO: 'assets/SEO.png'
   comments: false #disable comments globally
   generate_graph: true #generate the graph of the site
   blog_list:
