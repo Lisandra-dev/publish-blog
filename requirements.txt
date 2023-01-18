@@ -16,5 +16,3 @@ obsidiantools==0.8.1
 pyvis==0.3.1
 mkdocs-glightbox==0.3.1
 mkdocs-minify-plugin==0.6.2
-obsidiantools
-pyvis
