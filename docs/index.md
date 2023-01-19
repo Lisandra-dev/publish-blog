@@ -8,7 +8,3 @@ hide:
 # Home  
   
 homepage  
-  
-냉동실  
-  
-178 182
