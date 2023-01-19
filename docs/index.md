@@ -1,6 +1,7 @@
 ---  
 share: true  
-title: Home  
+title: Home
+template: main.html
 hide:  
   - navigation  
   - toc  
