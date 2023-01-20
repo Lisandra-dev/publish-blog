@@ -8,8 +8,8 @@ theme:
   hljs_languages:
     - yaml
     - rust
-  logo: "attachments/favicon.png"
-  favicon: attachments/favicon.png
+  logo: "assets/img/favicon.png"
+  favicon: assets/img/favicon.png
   custom_dir: overrides
   font:
     text: Ubuntu

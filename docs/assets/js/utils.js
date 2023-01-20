@@ -34,11 +34,16 @@ function UrlExists(url, type_url) {
     http.onload = function (e) {
         if (http.status == '404') {
             const newItem = document.createElement('div');
-            console.log(ref, url)
             newItem.innerHTML = title;
             newItem.classList.add('not_found');
-            newItem.setAttribute('url', ref);
-            url.parentNode.replaceChild(newItem, url);
+            newItem.setAttribute('href', ref);
+            try {
+                url.parentNode.replaceChild(newItem, url);
+            } catch (error) {
+                // console.log(error)
+            }
+            
+
         }
         else {
             return true;
