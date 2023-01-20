@@ -42,8 +42,6 @@ function UrlExists(url, type_url) {
             } catch (error) {
                 // console.log(error)
             }
-            
-
         }
         else {
             return true;
