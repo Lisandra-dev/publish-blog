@@ -1,5 +1,6 @@
 import logging
 import shutil
+import re
 import urllib.parse
 from datetime import datetime
 from pathlib import Path
@@ -9,6 +10,7 @@ from babel.dates import format_date
 from dateutil import parser
 from pyvis.network import Network
 
+
 def obsidian_graph():
     """Generates a graph of the Obsidian vault."""
     log = logging.getLogger("mkdocs.plugins." + __name__)
@@ -16,7 +18,8 @@ def obsidian_graph():
     vault_path = Path(Path.cwd(), 'docs')
     vault = otools.Vault(vault_path).connect().gather()
     graph = vault.graph
-    net = Network(height="750px", width="750px", font_color="#7c7c7c", bgcolor="transparent")
+    net = Network(height="750px", width="750px",
+                  font_color="#7c7c7c", bgcolor="transparent")
     net.from_nx(graph)
     try:
         net.save_graph(str(Path.cwd() / "docs" / "assets" / "graph.html"))
@@ -25,6 +28,11 @@ def obsidian_graph():
     shutil.rmtree(Path.cwd() / "lib")
     log.info("[OBSIDIAN GRAPH] Graph generated!")
     return ""
+
+
+def regex_replace(s, find, replace):
+    """A non-optimal implementation of a regex filter"""
+    return re.sub(find, replace, s)
 
 
 def log(text):
@@ -129,11 +137,11 @@ def url_decode(url):
 
 
 def value_in_frontmatter(key, metadata):
-    """Check if a key exists in the frontmatter.
+    """Check if a key exists in a dictionnary.
 
     Args:
         key (any): the key to check
-        metadata (any): the frontmatter
+        metadata (any): the dictionnary to check
 
     Returns:
         bool: true if exists
@@ -142,6 +150,7 @@ def value_in_frontmatter(key, metadata):
         return metadata[key]
     else:
         return None
+
 
 def on_env(env, config, files, **kwargs):
     if config['extra'].get('generate_graph', True):
@@ -154,4 +163,5 @@ def on_env(env, config, files, **kwargs):
     env.filters["log"] = log
     env.filters["to_local_time"] = to_local_time
     env.filters["value_in_frontmatter"] = value_in_frontmatter
+    env.filters['regex_replace'] = regex_replace
     return env
