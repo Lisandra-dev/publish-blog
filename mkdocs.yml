@@ -43,6 +43,7 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.path
+    - content.code.copy
 
 # Extensions
 markdown_extensions:
