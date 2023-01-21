@@ -28,12 +28,8 @@ function UrlExists(url, type_url) {
   }
 
   var http = new XMLHttpRequest();
-  // http.open('GET', ref, true);
-  http.open(
-    "GET",
-    urefrl + (/\?/.test(ref) ? "&" : "?") + new Date().getTime(),
-    true
-  );
+  console.log("ref", ref);
+  http.open("GET", ref, true);
   http.onload = function (e) {
     if (http.status == "404") {
       const newItem = document.createElement("div");
