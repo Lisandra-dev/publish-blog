@@ -16,7 +16,7 @@ if (mkDocs.getAttribute("data-md-color-scheme") === "default") {
 const observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
     if (mutation.type === "attributes") {
-      chirpy.setAttribute(
+      mkDocs.setAttribute(
         "class",
         mkDocsChirpyTranslator[mkDocs.dataset.mdColorScheme]
       );

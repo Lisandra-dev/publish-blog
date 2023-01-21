@@ -28,7 +28,7 @@ function UrlExists(url, type_url) {
   }
 
   var http = new XMLHttpRequest();
-  console.log("ref", ref);
+
   http.open("GET", ref, true);
   http.onload = function (e) {
     if (http.status == "404") {
