@@ -1,6 +1,6 @@
 site_name: Dorito
 site_description: Dorito's PKM
-site_url: https://dorito-dev.netlify.app/
+site_url: https://dorito.netlify.app/
 
 theme:
   name: "material"
